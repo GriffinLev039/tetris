@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+}
+
+#body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#container {
+    display: grid;
+    grid-template: 2fr 1fr / 1fr;
+}
+
+#game {
+    background-image: url("img/square-0.png");
+    background-position: initial;
+    background-size: 10%;
+    background-blend-mode: darken;
+    background-color: lightgray;
+    height: 600px;
+    width: 250px;
+}
+

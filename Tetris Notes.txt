@@ -1,0 +1,50 @@
+Tetris Notes
+
+10 wide, 24 tall
+
+each tile should be 15px by 15px
+goal atm is just to create grid
+
+scale to fill easily and readably is 
+
+for every 1/400 there should be (960/400) * ( 1/960)
+
+Each tetris tile
+
+Red = "rgba(0,0,0,0.5)"
+Blue = "rgba(0,0,0,0.5)"
+Green = "rgba(0,0,0,0.5)"
+Yellow = "rgba(0,0,0,0.5)"
+
+
+Order code runs in:
+1. Check if new piece is necessary
+2. Create new piece
+3. Apply new piece to board
+4. Render new piece
+5. Tick
+6. Check collision
+7. Repeat
+
+
+To-Do:
+1. Create functional Alpha
+    - Self-timing Tick
+    - Move left/right - Done
+    - Rotation - mostly done
+    - Collision between shapes - Done
+    - Different colors between shapes
+        > Use different numbers (1-7) to represent color, with 0 being blank
+2. Ensure proper cycle of pieces (track which ones have been used)\
+3. Create line removal
+4. Create scoring system
+
+xPos and yPos tracks the top left corner
+
+
+Ordered current To-Do:
+1. Different colors for pieces (easy)
+2. Rotation
+    a. Figure out method - store matrix of each rotation, rewrite dict and related code
+3. Create timed tick
+4. Create line removal
